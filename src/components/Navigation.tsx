@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Zap, Users, Calendar, UserCheck, Menu, X } from 'lucide-react';
+import logo from '../assets/2025 team photos/image.jfif';
 
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -19,8 +20,8 @@ const Navigation: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/src/assets/image.jfif" 
-              alt="Logo" 
+              src={logo}
+              alt="Cybersecurity Club Logo" 
               className="lg:w-14 h-8 sm:w-10 sm:h-10 filter brightness-110 hover:brightness-125 transition-all duration-300 hover:scale-110"
             />
             <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">

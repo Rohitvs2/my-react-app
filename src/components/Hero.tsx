@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import AnimatedButton from './AnimatedButton';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import heroImage from '../assets/2025 team photos/image.jfif';
+
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -47,9 +49,9 @@ const Hero: React.FC = () => {
         <div className="mb-8 animate-fade-in">
           <div className="flex justify-center mb-8">
             <img 
-              src="/src/assets/image.jfif" 
-              alt="NEXUS Logo" 
-              className="lg:w-60 h-20 sm:w-44 sm:h-24 md:w-32 md:h-32 filter brightness-110 hover:brightness-125 transition-all duration-700 hover:scale-110 "
+              src={heroImage}
+              alt="Club Logo" 
+              className="lg:w-60 h-20 sm:w-44 sm:h-24 md:w-32 md:h-32 filter brightness-110 hover:brightness-125 transition-all duration-700 hover:scale-110"
             />
           </div>
           <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-7xl font-black mb-6 leading-none">

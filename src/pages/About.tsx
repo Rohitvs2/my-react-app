@@ -117,22 +117,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Values Section */}
-        <div className="mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent fade-in-element opacity-0 transform translate-y-8">
-            Our Values
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {values.map((value, index) => (
-              <GlassmorphismCard key={index} className="fade-in-element opacity-0 translate-y-8 p-4 sm:p-6 text-center h-full">
-                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-white rounded-full mb-3 sm:mb-4 transform hover:scale-110 transition-transform duration-300">
-                  <value.icon size={20} className="sm:w-6 sm:h-6 text-purple-900" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">{value.title}</h3>
-                <p className="text-gray-200 text-xs sm:text-sm leading-relaxed">{value.description}</p>
-              </GlassmorphismCard>
-            ))}
-          </div>
-        </div>
+     
 
         {/* Stats Section */}
         <div className="fade-in-element opacity-0 transform translate-y-8">

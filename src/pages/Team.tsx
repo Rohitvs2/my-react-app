@@ -3,6 +3,24 @@ import GlassmorphismCard from '../components/GlassmorphismCard';
 import { Linkedin, Twitter, Mail, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Import team images
+import roh1 from '../assets/2025 team photos/roh1.jfif';
+import rk from '../assets/2025 team photos/RK.jfif';
+import dhanush from '../assets/2025 team photos/Dhanush.jpg';
+import venkatesh from '../assets/2025 team photos/VENKATESH .jpg';
+import shreyas from '../assets/2025 team photos/Shreyas 🙂.webp';
+import gunjana from '../assets/2025 team photos/GUNJANA.jpg';
+import vaishaviPratha from '../assets/2025 team photos/vaishnavi.jpg';
+import vaishaviGaujala from '../assets/2025 team photos/Vaish.jpg';
+import manogna from '../assets/2025 team photos/mn.jfif';
+import vikrama from '../assets/2025 team photos/vikram.jpeg';
+import harshith from '../assets/2025 team photos/HARSHITH.jpeg';
+import pranathi from '../assets/2025 team photos/Pranathi.jpg';
+import lasya from '../assets/2025 team photos/ls1.jfif';
+import harshJha from '../assets/2025 team photos/harsh.jpeg';
+import saathvik from '../assets/2025 team photos/Saathvik_.jpg';
+import adil from '../assets/2025 team photos/ad3.jfif';
+
 const Team: React.FC = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,181 +40,23 @@ const Team: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'Rohit Chandra',
-      designation: 'President',
-      image: 'src/assets/2025 team photos/roh1.jfif',
-       bio: 'President of the Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/rohit-chandra-05721626b/',
-        instagram: 'https://www.instagram.com/rohitksskks?igsh=eWoxMjdsbWF5ZW1x'
-      }
-    },
-    {
-      id: 2,
-      name: 'Ratna Keshav',
-      designation: 'Vice President',
-      image: 'src/assets/2025 team photos/RK.jfif',
-      bio: 'Vice President of the Cyber Security Club GCET.',
-      social: {
-        instagram: 'https://www.instagram.com/rk__07_10?igsh=MThhZzZodnpjbDNqaA=='
-      }
-    },
-    {
-      id: 3,
-      name: 'G.Dhanush Reddy',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/Dhanush.jpg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/dhanush3105/',
-        instagram: 'https://www.instagram.com/dhanush_reddy_31?igsh=MWI5YnFlYm0zbWhtaQ=='
-      }
-    },
-    {
-      id: 4,
-      name: 'S.S.S.Venkatesh',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/VENKATESH .jpg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/s-s-s-venkatesh-ab0859291/',
-        instagram: 'https://www.instagram.com/venkysama333?utm_source=qr&igsh=dG13OWd6NnNucHkx'
-      }
-    },
-    {
-      id: 5,
-      name: 'Shreyas Behara',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/Shreyas 🙂.webp',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/shreyas-behara/',
-        instagram: 'https://www.instagram.com/shreyasbehara_30?igsh=MWxjdTBjczU5dTFxZA=='
-      }
-    },
-    {
-      id: 6,
-      name: 'Gunjana Kachuwah',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/GUNJANA.jpg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/gunjana-kachuwaya/',
-        instagram: 'https://www.instagram.com/gunjana_kachuwaya?igsh=MTEzcjU0NHpkbHRuag=='
-      }
-    },
-    {
-      id: 7,
-      name: 'Vaishavi Pratha',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/vaishnavi.jpg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/vaishnavipratha7/',
-        instagram: 'https://www.instagram.com/vaishnavi.pratha?igsh=cjZ6OGg4Ymw4cG5x'
-      }
-    },
-    {
-      id: 8,
-      name: 'Vaishavi Gaujala',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/Vaish.jpg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/vaishnavi-gajula-0b369b303/',
-        instagram: 'https://www.instagram.com/_vaishnavigajula_?igsh=MmRxN3RleGF0eWQy'
-      }
-    },
-    {
-      id: 9,
-      name: 'K.Manogna',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/mn.jfif',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/manogna-kundam-9a0a63376/',
-        instagram: 'https://www.instagram.com/manognareddyy?igsh=MWZ3eXhiaGgyMHU3YQ=='
-      }
-    },
-    {
-      id: 10,
-      name: 'Vikrama Aditya',
-      designation: 'Core Team',
-      image: 'src/assets/2025 team photos/vikram.jpeg',
-      bio: 'Main Core Member Of Cyber Security Club GCET.',
-      social: {
-        instagram: 'https://www.instagram.com/vikramaditya.atragada?igsh=OXk1eGxkem40d2oz'
-      }
-    },
-    {
-      id: 11,
-      name: 'K.Harshith Subramanyam',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/HARSHITH.jpeg',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/kakumanu-harshith-subrahmanyam-56455a255/',
-        instagram: 'https://www.instagram.com/suubbbuu?igsh=MXh5M2VpaGJpbmF5bA=='
-      }
-    },
-    {
-      id: 12,
-      name: 'V.Padmavathi Pranathi',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/Pranathi.jpg',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/v-padmavathi-pranathi-5165a8359/',
-        instagram: 'https://www.instagram.com/_padmavathipranathi?igsh=Y25hbjkzZGNkdDF5'
-      }
-    },
-    {
-      id: 13,
-      name: 'Sai Lasya',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/ls1.jfif',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/lasya-k-376740318/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        instagram: 'https://www.instagram.com/lasya_jpg?igsh=aXQzZ3Q4enZua2Ri'
-      }
-    },
-    {
-      id: 14,
-      name: 'Harsh Jha',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/harsh.jpeg',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/harsh-jha-883aa5327/',
-        instagram: 'https://www.instagram.com/markjhaash?igsh=MWhmangyemJscDVwaQ=='
-      }
-    },
-    {
-      id: 15,
-      name: 'Saathvik',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/Saathvik_.jpg',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/saathvik-vinnakota-007838363/',
-        instagram: 'https://www.instagram.com/saathvix_fr?igsh=MWg1dWZjaW5teGl5bw=='
-      }
-    },
-    {
-      id: 16,
-      name: 'Mohammed Adil Ahmed',
-      designation: 'Sub-Core Team',
-      image: 'src/assets/2025 team photos/ad3.jfif',
-      bio: 'Sub-Core Member Of Cyber Security Club GCET.',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/mohammed-adil-ahmed-shareef-445586323/',
-        instagram: 'https://www.instagram.com/md_adil_ahmed_shareef?igsh=aW1tcndpcm1qc3Rj'
-      }
-    }
+ const teamMembers = [
+    { id: 1, name: 'Rohit Chandra', designation: 'President', image: roh1, bio: 'President of the Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/rohit-chandra-05721626b/', instagram: 'https://www.instagram.com/rohitksskks?igsh=eWoxMjdsbWF5ZW1x' } },
+    { id: 2, name: 'Ratna Keshav', designation: 'Vice President', image: rk, bio: 'Vice President of the Cyber Security Club GCET.', social: { instagram: 'https://www.instagram.com/rk__07_10?igsh=MThhZzZodnpjbDNqaA==' } },
+    { id: 3, name: 'G.Dhanush Reddy', designation: 'Core Team', image: dhanush, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/dhanush3105/', instagram: 'https://www.instagram.com/dhanush_reddy_31?igsh=MWI5YnFlYm0zbWhtaQ==' } },
+    { id: 4, name: 'S.S.S.Venkatesh', designation: 'Core Team', image: venkatesh, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/s-s-s-venkatesh-ab0859291/', instagram: 'https://www.instagram.com/venkysama333?utm_source=qr&igsh=dG13OWd6NnNucHkx' } },
+    { id: 5, name: 'Shreyas Behara', designation: 'Core Team', image: shreyas, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/shreyas-behara/', instagram: 'https://www.instagram.com/shreyasbehara_30?igsh=MWxjdTBjczU5dTFxZA==' } },
+    { id: 6, name: 'Gunjana Kachuwah', designation: 'Core Team', image: gunjana, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/gunjana-kachuwaya/', instagram: 'https://www.instagram.com/gunjana_kachuwaya?igsh=MTEzcjU0NHpkbHRuag==' } },
+    { id: 7, name: 'Vaishavi Pratha', designation: 'Core Team', image: vaishaviPratha, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/vaishnavipratha7/', instagram: 'https://www.instagram.com/vaishnavi.pratha?igsh=cjZ6OGg4Ymw4cG5x' } },
+    { id: 8, name: 'Vaishavi Gaujala', designation: 'Core Team', image: vaishaviGaujala, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/vaishnavi-gajula-0b369b303/', instagram: 'https://www.instagram.com/_vaishnavigajula_?igsh=MmRxN3RleGF0eWQy' } },
+    { id: 9, name: 'K.Manogna', designation: 'Core Team', image: manogna, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/manogna-kundam-9a0a63376/', instagram: 'https://www.instagram.com/manognareddyy?igsh=MWZ3eXhiaGgyMHU3YQ==' } },
+    { id: 10, name: 'Vikrama Aditya', designation: 'Core Team', image: vikrama, bio: 'Main Core Member Of Cyber Security Club GCET.', social: { instagram: 'https://www.instagram.com/vikramaditya.atragada?igsh=OXk1eGxkem40d2oz' } },
+    { id: 11, name: 'K.Harshith Subramanyam', designation: 'Sub-Core Team', image: harshith, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/kakumanu-harshith-subrahmanyam-56455a255/', instagram: 'https://www.instagram.com/suubbbuu?igsh=MXh5M2VpaGJpbmF5bA==' } },
+    { id: 12, name: 'V.Padmavathi Pranathi', designation: 'Sub-Core Team', image: pranathi, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/v-padmavathi-pranathi-5165a8359/', instagram: 'https://www.instagram.com/_padmavathipranathi?igsh=Y25hbjkzZGNkdDF5' } },
+    { id: 13, name: 'Sai Lasya', designation: 'Sub-Core Team', image: lasya, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/lasya-k-376740318/', instagram: 'https://www.instagram.com/lasya_jpg?igsh=aXQzZ3Q4enZua2Ri' } },
+    { id: 14, name: 'Harsh Jha', designation: 'Sub-Core Team', image: harshJha, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/harsh-jha-883aa5327/', instagram: 'https://www.instagram.com/markjhaash?igsh=MWhmangyemJscDVwaQ==' } },
+    { id: 15, name: 'Saathvik', designation: 'Sub-Core Team', image: saathvik, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/saathvik-vinnakota-007838363/', instagram: 'https://www.instagram.com/saathvix_fr?igsh=MWg1dWZjaW5teGl5bw==' } },
+    { id: 16, name: 'Mohammed Adil Ahmed', designation: 'Sub-Core Team', image: adil, bio: 'Sub-Core Member Of Cyber Security Club GCET.', social: { linkedin: 'https://www.linkedin.com/in/mohammed-adil-ahmed-shareef-445586323/', instagram: 'https://www.instagram.com/md_adil_ahmed_shareef?igsh=aW1tcndpcm1qc3Rj' } }
   ];
 
   // Group members by designation
